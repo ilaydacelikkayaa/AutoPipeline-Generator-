@@ -1,0 +1,74 @@
+# Secrets and machine-specific credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials*
+secrets.*
+.aws/
+.azure/
+.ssh/
+.npmrc
+.pypirc
+.netrc
+.git-credentials
+
+# Local environments, dependencies, caches and build output
+.venv/
+venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+dist/
+build/
+*.egg-info/
+*.log
+
+# Backups and generated local pipeline artifacts
+backups/
+*.bak
+*.backup
+*.orig
+*.swp
+*.swo
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+/azure-pipelines.generated.yml
+/frontend-plan.json
+
+# Local investigation reports contain environment-specific details
+/P0_REPORT.md
+/P1_WINDOWS_REPORT.md
+/LINUX_PREVIEW_REPORT.md
+
+# Editor, OS and assistant state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.agents/
+.codex/
+*.local
+
+# Unused starter assets (preserved locally)
+/frontend/src/assets/react.svg
+/frontend/src/assets/vite.svg
+/frontend/src/assets/hero.png
+/frontend/public/icons.svg
