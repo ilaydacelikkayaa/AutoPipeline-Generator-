@@ -1,0 +1,18 @@
+
+project:
+  name: spring-petclinic
+  path: "."
+  branch: main
+
+pipeline:
+  vm_image: ubuntu-latest
+  build_engine: railpack
+  execution_mode: container
+
+artifact:
+  name: application-build
+  
+deployment:
+  target: linux-container
+  agent_pool: AutoPipeline-Linux
+  environment: staging
